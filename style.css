@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    background-color: black;
+}
+
+.Section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    gap: 5px;
+    padding: 2vh;
+}
+
+.title{
+    font-size: 3rem;
+    align-items: center;
+}
+
+.current_shape{
+    font-size: 2rem;
+}
+
+section{
+    background: white;
+    border-radius: 7px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clear{
+    padding: 0.5rem 4rem;
+    color: black;
+    font-size: 15px;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    border-color: black;
+    border-radius: 5px;
+    width: fit-content;
+    background-color: transparent;
+}
+
+.save{
+    padding: 0.5rem 4rem;
+    color: black;
+    cursor: pointer;
+    border-color: black;
+    border-radius: 5px;
+    width: fit-content;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+}
+
+.row ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+/* .current_shape active{
+    font-size: 100;
+} */
+
+/* .qw{
+    font-size: 100;
+} */
+
+
+.tools{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    padding: 10px 10px 10px 10px;
+    height: 90vh;
+}
+
+.row .available_shapes .current_shape{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+/* .current_shape {
+    color: blue;
+} */
+
+.current_shape:is(:hover,.active) img{
+    filter: hue-rotate(300deg);
+}
+
+.current_shape img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+.current_shape :where(span,label){
+    cursor: pointer;
+    padding: 0px 0px 0px 8px;
+}
+
+.current_shape:is(:hover,.active) :where(span,label){
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.3s ease;
+    color: red;
+}
+
+/* .current_shape span:hover{
+    --_i: 100%;
+    color: #CC333F;
+    transition: .3s, -webkit-mask-size .3s .3s;
+} */
+
+.row1 .clear:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.12);
+    transition: 0.5s ease;
+}
+
+.row1 .save:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.12);
+    transition: 0.5s ease;
+}
+
+
+
+.row button:hover{
+    /* -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease; */
+    /* border: 8px solid;
+  border-image: repeating-linear-gradient(135deg,#F8CA00 0 10px,#E97F02 0 20px,#BD1550 0 30px) 8;
+  -webkit-mask: 
+    conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
+     var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+    conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
+     0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+    linear-gradient(#000 0 0) padding-box no-repeat;
+  transition: .3s, -webkit-mask-position .3s .3s; */
+    /* --_i: 100%;
+    color: #CC333F;
+    transition: .3s, -webkit-mask-size .3s .3s; */
+}
+.drawing_area{
+    flex: 1;
+}
+
+/* .drawing_area canvas{
+    width: 100%;
+    height: 100%;
+} */
+
+@media (max-width: 500px)
+{
+    .tools{
+        height: 50vw;
+    }
+}

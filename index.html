@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Drawing Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="Section">
+        <section class="tools">
+            <div class="row">
+                <label class="title">Shapes</label>
+                <ul class="available_shapes">
+                    <li class="current_shape active"  id="square">
+                        <img src="square.jpeg" alt="square icon">
+                        <span style="font-size: 20px;">Square</span>
+                    </li>
+                    <li class="current_shape" id="rectangle">
+                        <img src="rectangle.jpeg" alt="rectangle icon">
+                        <span style="font-size: 20px;">Rectangle</span>
+                    </li>
+                    <li class="current_shape" id="line">
+                        <img src="line.jpeg" alt="line icon">
+                        <span style="font-size: 20px;">Line</span>
+                    </li>
+                    <li class="current_shape" id="circle">
+                        <img src="circle.jpeg" alt="circle icon">
+                        <span style="font-size: 20px;">Circle</span>
+                    </li>
+                    <li class="current_shape" id="triangle">
+                        <img src="triangle.jpeg" alt="triangle icon">
+                        <span style="font-size: 20px;">Triangle</span>
+                    </li>
+                </ul>
+                <div class="row1">
+                    <button class="clear">Clear</button>
+                    <button class="save">Save</button>
+                </div>
+            </div>
+        </section>
+        <section class="drawing_area">
+            <canvas id="preview" width="1200" height="650"></canvas>
+        </section>
+    </div>
+  </body>
+</html>
